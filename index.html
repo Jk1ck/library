@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Books</h1>
+    <div id="container">
+        <button data-modal-target="#modal" class="add-book-button">&#43;  Add a new book</button>
+        <div class="form-container modal" id="modal">
+            <div class="form-head">
+                <h2>Add a new book</h2>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <form class="form">
+                
+                <div class="label-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="label-input">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author">
+                </div>
+
+                <div class="label-input">
+                    <label for="yearPublished">Publication year</label>
+                    <input type="number" id="yearPublished" name="Publication year">
+                </div>
+
+                <div class="label-input">
+                    <label for="genre">Genre</label>
+                    <input type="text" id="genre" name="genre">
+                </div>
+
+                <button type="button" id="form-button">Add</button>
+            </form>
+        </div>
+        <div id="overlay"></div>
+        <div id="books-container">
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
